@@ -38,7 +38,8 @@
                 </div>
                 <div class="card mx-auto border-0 bg-card-register mt-5" style="width: 32rem;">
                     <div class="card-body p-5">
-                        <form method="POST" action="{{ route('register') }}">
+                        <form method="POST" action="{{ route('login') }}">
+                            @csrf
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email address</label>
                                 <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
